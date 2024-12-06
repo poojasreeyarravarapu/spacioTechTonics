@@ -1,0 +1,579 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding-top: 20px;
+    margin: 20px;
+  }
+  
+  /* Navigation styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* Hamburger styles */
+  .hamburger {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  /* Checkbox hack for toggle */
+  #menu-toggle {
+    display: none;
+  }
+  
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  /* Logo Text */
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .sub-brand-name {
+    font-size:1.5rem;
+    line-height: 1.2;
+  }
+  .trademark {
+    font-size: 0.6em;
+    vertical-align: top;
+    margin-left: 3px;
+  }
+
+  
+  /* Background Section */
+/* Background Section */
+.back-img-2 {
+  background-image: url('image1.png'); /* Replace with your actual image */
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  background-blend-mode: lighten; /* Blends the white with the image */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  
+  /* Content Wrapper */
+  .content-space {
+    display: flex;
+    align-items: center; /* Align text and arrow vertically */
+    justify-content: space-between; /* Space between text content and arrow */
+    max-width: 900px;
+    color: black;
+    padding: 20px;
+    width: 90%; /* Ensure responsiveness */
+  }
+  
+  /* Text Content Styling */
+  .text-content {
+    max-width: 70%; /* Adjust text width */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  .italic-bold {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .italic-bold-underline {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* CTA Button Styling */
+  .ct-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Space between button text and icon */
+    background-color: #10457d;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ct-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .ct-button i {
+    font-size: 1.2rem;
+  }
+  
+  /* Arrow Icon Styling */
+  .icon-arrow {
+    display: flex;
+    align-items: center; /* Centers the icon vertically */
+    justify-content: center;
+  }
+  
+  .icon-arrow i {
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-arrow i:hover {
+    transform: translateX(5px); /* Smooth hover effect */
+  }
+  .footer {
+    position: absolute; /* Positioning the footer at the bottom of the container */
+    bottom: 5px; /* Adds some padding from the bottom */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Aligns the center properly */
+    font-size: 0.6rem; /* Smaller font size */
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  /* Set body to fill the entire viewport and use flexbox */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Wrapper to hold the whole content and enable flexbox */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Position the "We are Spacio Techtonics" at the top-left with an orange sidebar */
+.top-left {
+  text-align: left;
+}
+
+
+
+/* Orange sidebar next to the title */
+.highlight-bar {
+  content: '';
+  display: inline-block;
+  width: 6px; /* Adjust width of sidebar */
+  height: 100px; /* Increased height for the sidebar */
+  background-color: orange;
+  margin-right: 15px; /* Space between sidebar and text */
+}
+
+/* Position the content to the right side of the page */
+.content-container {
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center; /* Center the content vertically */
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px; /* Space for the button at the bottom */
+}
+
+.content {
+  max-width: 700px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.content p {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.highlight {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/* Style the "More on our expertise" button */
+.cta-container {
+  display: flex;
+  justify-content: flex-start; /* Align the button to the left */
+  width: 100%;
+  padding-left: 20px;
+  margin-top: auto; /* Push it to the bottom */
+}
+
+.cta {
+  padding: 15px 30px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text color */
+  font-weight: bold;
+  border: none; /* No border */
+  border-radius: 8px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.6); /* Shadow to the bottom */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta .arrow {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.highl{
+  background-color: orangered;
+  width:1px;
+}
+
+.more_cont{
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.con{
+  text-align: left;
+  max-width: 500px;
+}
+
+.btnn{
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.im-3 {
+  background-image: url('Spacio\ TechTonics\ Consultancy\ V21.png'); /* Ensure the image path is correct */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: flex-end;  /* Aligns content to the bottom */
+  position: relative; /* Make sure it's positioned relative to its container */
+}
+
+.con-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+  color: white;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center the text */
+  justify-content: flex-end; /* Align the text to the bottom */
+  text-align: center; /* Ensure the text is centered */
+  margin-bottom: 20px; /* Adjust bottom margin as needed */
+  position: absolute; /* Position the text absolutely within the image */
+  bottom: 10px; /* Adjust to position the text near the bottom */
+  left: 50%; /* Horizontally center */
+  transform: translateX(-50%); /* Correct the horizontal centering */
+}
+
+.fa-angle-left, .fa-angle-right {
+  font-size: 3rem;
+  color: white;
+}
+
+.bck{
+  background-color: antiquewhite;
+  padding: 35px;
+}
+
+.card{
+  text-align: center;
+  border: none;
+}
+
+.p{
+  font-size: 7px;
+}
+
+.btn{
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.latest-work {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.view-all {
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+}
+
+.image-slider {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.image-item {
+  position: relative;
+}
+
+.image-item img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.caption {
+  text-align: left;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+/* Arrow background images */
+.image-container::before,
+.image-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.image-container::before {
+  left: 10px;
+  background-image: url('path-to-your-left-arrow-icon.png'); /* Replace with your left arrow icon */
+}
+
+.image-container::after {
+  right: 10px;
+  background-image: url('path-to-your-right-arrow-icon.png'); /* Replace with your right arrow icon */
+}
+
+span{
+  padding: 10px;
+}
+
+.arr{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card1 {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 15px; /* For curved borders */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Shadow on right and bottom */
+  background-color: transparent; /* No background color */
+  border-top: none; /* Remove top border */
+  border-left: none; /* Remove left border */
+  border-right: 1px solid rgba(0, 0, 0, 0.1); /* Optional right border */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Optional bottom border */
+}
+
+.card1 h2 {
+  margin-top: 0;
+}
+
+.card1 p {
+  margin-bottom: 0;
+}
+
+.bord{
+    display: flex;
+    justify-content: center;
+    border: 3px solid ;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+
+}
+
+.cont-5{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last{
+  color: white;
+}
+
+.par{
+  font-size: 15px;
+}
+
+.last_back{
+  background-image: url('Spacio\ TechTonics\ Consultancy\ V21.png');
+  height: 100vh;
+  background-size: cover;
+}
+
+/* Apply background image to the container */
+/* Apply background image to the container */
+.last_back {
+  background-image: url('Spacio TechTonics Consultancy V21.png'); /* Replace with the actual image path */
+  background-position: center;
+  background-size: cover; /* Ensures the background image covers the full container */
+  background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+  min-height: 100vh; /* Ensures the container takes at least the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0; /* Ensure the container covers the full viewport */
+}
+
+/* Navbar Styling */
+.navbar {
+  background: transparent !important; /* Ensure navbar background does not override the image */
+  z-index: 1; /* Ensure the navbar is above the background */
+}
+/* Navbar toggler for small screens */
+.navbar-toggler {
+  border: 1px solid white;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;base64,...'); /* Replace with white-colored toggler icon if needed */
+}
+
+/* General Content Styling */
+.last_back h1,
+.last_back .par {
+  color: white;
+}
+
+/* Push 'Keep in touch' section to the bottom */
+.last_back .endi {
+  margin-top: auto; /* Push 'Keep in touch' to the bottom of the container */
+  text-align: center;
+}
+
+/* Footer Styling */
+
+.inp{
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  background: transparent;
+}
+
+.butt{
+  background-color: white;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 13px;
+  border: none;
+  height: 25px;
+  width:80px;
+}
